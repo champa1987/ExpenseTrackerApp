@@ -1,5 +1,8 @@
+com\example\expensetracker\config\CorsConfig$1.class
 ExpenseService.class
+com\example\expensetracker\ExpenseTrackerApplication.class
+com\example\expensetracker\config\SecurityConfig.class
+com\example\expensetracker\config\CorsConfig.class
 com\example\expensetracker\controller\ExpenseController.class
 com\example\expensetracker\ExpenseRepository.class
-com\example\expensetracker\ExpenseTrackerApplication.class
 com\example\expensetracker\model\Expense.class

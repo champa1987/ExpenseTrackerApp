@@ -16,7 +16,7 @@ public class ExpenseController {
     @Autowired
     private ExpenseRepository expenseRepository;  // Inject the repository
 
-    // Add a new expense (POST /expenses)
+    // Add a new expense (POST /expenses)lea
     @PostMapping
     public ResponseEntity<Expense> addExpense(@RequestBody Expense expense) {
         try {
