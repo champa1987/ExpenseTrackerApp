@@ -1,17 +1,16 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ExpenseForm from './components/ExpenseForm';
-import ExpenseTable from './components/ExpenseTable';
+import Expenses from './components/Expenses'; // Updated to use the 'Expenses' component
 
 const App = () => {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
-    // Fetch expenses from backend API (updated URL)
+    // Fetch expenses from the backend API
     axios.get('http://localhost:8080/expenses')  // Update to the correct backend URL
       .then(response => {
-	 console.log('Fetched expenses:', response.data);
+        console.log('Fetched expenses:', response.data);
         setExpenses(response.data);
       })
       .catch(error => console.error('Error fetching expenses:', error));
@@ -20,7 +19,8 @@ const App = () => {
   const handleAddExpense = (expense) => {
     axios.post('http://localhost:8080/expenses', expense)  // Updated URL
       .then(response => {
-        setExpenses([...expenses, response.data]);
+        // Use a functional update to ensure you're working with the latest state
+        setExpenses(prevExpenses => [...prevExpenses, response.data]);
       })
       .catch(error => console.error('Error adding expense:', error));
   };
@@ -28,15 +28,18 @@ const App = () => {
   const handleDeleteExpense = (id) => {
     axios.delete(`http://localhost:8080/expenses/${id}`)  // Updated URL
       .then(() => {
-        setExpenses(expenses.filter(expense => expense.id !== id));
+        setExpenses(prevExpenses => prevExpenses.filter(expense => expense.id !== id));
       })
       .catch(error => console.error('Error deleting expense:', error));
   };
 
   return (
     <div>
-      <ExpenseForm onAddExpense={handleAddExpense} />
-      <ExpenseTable expenses={expenses} onDeleteExpense={handleDeleteExpense} />
+      <Expenses 
+        expenses={expenses} 
+        onAddExpense={handleAddExpense} 
+        onDeleteExpense={handleDeleteExpense} 
+      />
     </div>
   );
 };
