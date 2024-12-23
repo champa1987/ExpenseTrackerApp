@@ -1,7 +1,7 @@
 package com.example.expensetracker.controller;
 
 import com.example.expensetracker.model.Expense;
-import com.example.expensetracker.ExpenseRepository;  // Add the repository import
+import com.example.expensetracker.repository.ExpenseRepository;  // Add the repository import
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import java.util.List;
 public class ExpenseController {
 
     @Autowired
-    private ExpenseRepository expenseRepository;  // Inject the repository
+    public ExpenseRepository expenseRepository;  // Inject the repository
 
     // Add a new expense (POST /expenses)lea
     @PostMapping

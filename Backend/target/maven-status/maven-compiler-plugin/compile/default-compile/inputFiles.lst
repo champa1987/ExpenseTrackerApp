@@ -1,7 +1,7 @@
-C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\ExpenseRepository.java
-C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\ExpenseService.java
 C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\model\Expense.java
 C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\controller\ExpenseController.java
 C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\config\SecurityConfig.java
+C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\repository\ExpenseRepository.java
 C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\config\CorsConfig.java
 C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\ExpenseTrackerApplication.java
+C:\Users\champ\CHAMPA\ExpenseTrackerApp\Backend\src\main\java\com\example\expensetracker\service\ExpenseService.java
