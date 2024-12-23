@@ -1,0 +1,76 @@
+/* Styling for the main container */
+.expenses-container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling (h1) */
+.expenses-container h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;  /* Adjust the font size as needed */
+  margin-bottom: 20px;  /* Space below the title */
+}
+
+/* Styling for the image inside the title */
+.expenses-container img {
+  width: 300px;  /* Make the image larger by increasing width */
+  height: 50px;  /* Ensure the height matches the width */
+  margin-right: 15px;  /* Add some space between image and title */
+  object-fit: contain;  /* This ensures the image fits inside the given dimensions */
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Button styling */
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the list (if you had used ExpenseList) */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for each expense item */
+li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button styling in the list */
+li button {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+li button:hover {
+  background-color: #b30000;
+}
