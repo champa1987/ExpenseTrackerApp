@@ -1,5 +1,0 @@
-ExpenseService.class
-com\example\expensetracker\controller\ExpenseController.class
-com\example\expensetracker\ExpenseRepository.class
-com\example\expensetracker\ExpenseTrackerApplication.class
-com\example\expensetracker\model\Expense.class
